@@ -1,5 +1,6 @@
 const question = document.getElementById('question');
 const answer = 	document.getElementById('answer');
+const clear = 	document.getElementById('clear');
 
 const data = [
 	{ question: "Противошоковый набор включает следующие лекарственные препараты:", answer: "Эпинефрин" },
@@ -37,8 +38,8 @@ const getAnswer = () => {
 	const chars = question.value.toLowerCase();
 	let result = "";
 	
-	for (let i = 0; i < data.length; i++) {
-		if (data[i].question.toLowerCase().includes(chars)) {
+	for (let i = 0; i < data.length; i += 1) {
+		if (data[i].question.toLowerCase().indexOf(chars) !== -1) {
 			result += `\nВопрос: ${data[i].question}\nОтвет: ${data[i].answer}\n`;
 		}
 	}
@@ -46,3 +47,11 @@ const getAnswer = () => {
 	if (chars.length > 0) answer.innerText = result;
 	else answer.innerText = '';
 }
+
+const clearInput = () => {
+	question.value = '';
+	answer.innerText = '';
+}
+
+question.addEventListener('input', getAnswer);
+clear.addEventListener('click', clearInput);
