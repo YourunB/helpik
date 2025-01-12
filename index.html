@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helpik</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HELPIK</title>
 </head>
 <body>
-    
+  <h1>Ответы на тест</h1>
+  <label for="question">Введите вопрос:</label>
+  <input type="text" id="question" oninput="getAnswer()">
+
+  <p id="answer"></p>
+  
+  <script src="./index.js"></script>
+
 </body>
 </html>
