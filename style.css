@@ -1,0 +1,36 @@
+html {
+  background: black;
+  color: white;
+}
+
+body {
+  padding: 10px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  max-width: 100px;
+  width: 100%;
+}
+
+input {
+  width: calc(100% - 10px);
+  background: none;
+  border: none;
+  border-bottom: solid 2px white;
+  color: white;
+  outline: none;
+  font-weight: 700;
+  padding: 5px;
+}
+
+p {
+  color: rgb(255, 255, 190);
+  font-weight: 700;
+}
