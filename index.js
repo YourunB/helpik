@@ -39,7 +39,7 @@ const getAnswer = () => {
 	let result = "";
 	
 	for (let i = 0; i < data.length; i++) {
-		if (data[i].question.toLowerCase().includes(chars)) {
+		if (data[i].question.toLowerCase().indexOf(chars) !== -1) {
 			result += `\nВопрос: ${data[i].question}\nОтвет: ${data[i].answer}\n`;
 		}
 	}
