@@ -4,12 +4,23 @@ html {
 }
 
 body {
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
-input {
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  max-width: 100px;
   width: 100%;
+}
+
+input {
+  width: calc(100% - 10px);
   background: none;
   border: none;
   border-bottom: solid 2px white;
