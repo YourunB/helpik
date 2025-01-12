@@ -16,8 +16,7 @@ const getAnswer = () => {
 	
 	for (let i = 0; i < data.length; i++) {
 		if (data[i].question.toLowerCase().includes(chars)) {
-			result = `Вопрос: ${data[i].question}\nОтвет: ${data[i].answer}`;
-			break;
+			result += `\nВопрос: ${data[i].question}\nОтвет: ${data[i].answer}\n`;
 		}
 	}
 
