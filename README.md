@@ -1,3 +1,3 @@
-An example of a website for a stretch ceiling company.   
+HelpiK app to help doctors study medical tests and pass exams.   
 
 # [Open APP](https://yourunb.github.io/helpik/)
